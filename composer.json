@@ -17,13 +17,19 @@
     ],
     "require": {
         "php": "^8.1",
-        "silverstripe/cms": "^5",
-        "unclecheese/display-logic": "^3"
+        "silverstripe/cms": "~6.0.0@beta",
+        "unclecheese/display-logic": "dev-silverstripe6"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^3",
+        "silverstripe/recipe-testing": "4.x-dev",
         "squizlabs/php_codesniffer": "^3"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/dynamic/silverstripe-display-logic"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "SilverStripe\\RedirectedURLs\\": "src/",
